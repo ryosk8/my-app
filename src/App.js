@@ -1,11 +1,10 @@
 function App() {
   return (
-    <div className="App">
-      <h1>
-          Hello React
-      </h1>
-        
+    <div>
+      <label htmlFor="bar">bar</label>
+      <input type="text" onChange ={() => {console.log("I am clicked!")}} />
     </div>
+    
   );
 }
 
