@@ -3,6 +3,6 @@ export const DECREMENT='DECREMENT'
 export const increment =()=>({
     type:'INCREMENT'
 })
-export const deincrement =()=>({
+export const decrement =()=>({
     type:'DECREMENT'
 })
