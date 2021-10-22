@@ -14,7 +14,7 @@ constructor(props){
 }
 
   renderField(field){
-    const {input,label,type, meta:{touched,error} } =field
+    const {input,label,meta:{touched,error} } =field
 
     return(
       <TextField 
