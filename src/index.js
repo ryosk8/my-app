@@ -18,9 +18,9 @@ const enhancer =process.env.NODE_ENV ==='development' ?
   composeWithDevTools(applyMiddleware(thunk)) :applyMiddleware(thunk)
 const store = createStore(reducer, enhancer)
 ReactDOM.render(
-  <MuiThemeProvider basename={process.env.PUBLIC_URL}>
+  <MuiThemeProvider >
     <Provider store={store}>
-      <BrowserRouter   >
+      <BrowserRouter basename={process.env.PUBLIC_URL} >
         <Switch>
           <Route path="/events/new" component={EventsNew} />
           <Route  path="/events/:id" component={EventsShow} />
